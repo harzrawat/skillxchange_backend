@@ -38,6 +38,10 @@ def create_app(config_class=Config):
     def health_check():
         return {'status': 'ok', 'project': 'SkillXchange'}
 
+    with app.app_context():
+        # This will automatically create any tables that don't exist yet!
+        db.create_all()
+
     return app
 
 if __name__ == '__main__':

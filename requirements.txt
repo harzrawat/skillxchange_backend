@@ -7,3 +7,4 @@ python-dotenv==1.0.1
 bcrypt==4.1.2
 razorpay==2.0.1
 Flask-CORS==4.0.0
+gunicorn==22.0.0
